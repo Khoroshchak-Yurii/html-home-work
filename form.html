@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <meta name="author" content="Yurii Khoroshchak">
+    <link rel="icon" href="img/Steve-Carell.gif" type="image/x-icon/">
+</head>
+<body>
+    <header>
+        <h1>"The Office" Fan Page</h1>
+        <img src="img/of.gif">
+        <nav>
+            <a href="index.html">Home</a>
+        </nav><br>
+    </header>
+    <main>
+    <!--
+        <h2>Fill in the form:)</h2>
+        <form action="https://formspree.io/xnqgjwva" method="POST">
+           <label>  
+                First name:
+                <input type="text" name="First name" required>
+           </label>
+           <br>
+           <label>  
+                Last name:
+                <input type="text" name="Last name" required>
+           </label>
+           <br>
+           <label>  
+                Email:
+                <input type="email" name="Email">
+           </label>
+           <br>
+           <label>  
+                Gender:
+           </label>
+            <label>  
+                <input type="radio" name="gender" value="male">
+                Male
+           </label>
+           <label>  
+                <input type="radio" name="gender" value="female">
+                Female
+           </label>
+           <label>  
+                <input type="radio" name="gender" value="other">
+                Other
+           </label>
+           <br>
+            <button type="submit">Send your answer!</button>
+            <input type="reset">
+        </form>
+        -->
+        <h2>Fill out the questionnaire :)</h2>
+        <form action="https://formspree.io/xnqgjwva" method="POST">
+            <section>
+                <h4>Contact info</h4>
+                <label for="fname">
+                    First Name: 
+                    <input type="text" id="fname" name="user_name">
+                    <abbr title="required" aria-label="required">*</abbr>
+                </label>
+                <br>
+                <label for="sname">
+                    Second Name: 
+                    <input type="text" id="sname" name="user_surname">
+                    <abbr title="required" aria-label="required">*</abbr>
+                </label>
+                <br>
+                <label for="email">
+                    Email: <input type="email" id="email" name="user_email">
+                </label>
+                <br>
+                <label >
+                    Gender:
+                </label>
+                <label for="male">
+                    <input type="radio" id="male" name="gender"> Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender"> Female
+                </label>
+                <label for="other">
+                    <input type="radio" id="other" name="gender"> Other
+                </label>
+            </section>
+            <section>
+                <h4>Choose your favorite character from "The Office"</h4>
+                <select id="simple" name="simple" required>
+                    <option>Michael</option>
+                    <option selected>Jim</option>
+                    <option>Pam</option>
+                    <option>Dwight</option>
+                    <option>Jim</option>
+                    <option>Andy</option>
+                    <option>Darryl</option>
+                </select>
+            </section>
+            <br>
+            <section>
+                <h4>Enter your favorite quote from "The Office"</h4>
+                <label for="msg">Quote:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </section>
+                <button type="submit">Send your answer!</button>
+                <input type="reset">
+
+        </form>
+           
+    </main>
+        
+</body>
+</html>
